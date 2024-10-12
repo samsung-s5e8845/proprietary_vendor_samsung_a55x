@@ -6,12 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/a55x
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/a55x/proprietary/vendor/bin/cass:$(TARGET_COPY_OUT_VENDOR)/bin/cass \
-    vendor/samsung/a55x/proprietary/vendor/bin/hw/android.hardware.gatekeeper-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper-service \
-    vendor/samsung/a55x/proprietary/vendor/bin/hw/rild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/rild \
-    vendor/samsung/a55x/proprietary/vendor/bin/secril_config_svc:$(TARGET_COPY_OUT_VENDOR)/bin/secril_config_svc \
     vendor/samsung/a55x/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
-    vendor/samsung/a55x/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.rc \
     vendor/samsung/a55x/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/a55x/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/a55x/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
@@ -22,23 +17,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
     vendor/samsung/a55x/proprietary/vendor/etc/wifi/mx140_bt.hcf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/mx140_bt.hcf \
     vendor/samsung/a55x/proprietary/vendor/firmware/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/calliope_sram.bin \
-    vendor/samsung/a55x/proprietary/vendor/lib64/hw/gatekeeper.s5e8845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.s5e8845.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libSemDataProps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSemDataProps.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libSemTelephonyProps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSemTelephonyProps.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libfloatingfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfloatingfeature.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libril_sem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril_sem.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libsec-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec-ril.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libvk_cass_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvk_cass_interface.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/libvkmanager_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkmanager_vendor.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/soundfx/libswdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswdap.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio-V1-ndk.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.network-V1-ndk.so \
-    vendor/samsung/a55x/proprietary/vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so \
     vendor/samsung/a55x/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/a55x/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \
     vendor/samsung/a55x/proprietary/vendor/tee/00000000-0000-0000-0000-000000534b4d:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000534b4d \
@@ -75,6 +53,26 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
+    gatekeeper.s5e8845 \
+    libSemDataProps \
+    libSemTelephonyProps \
+    libfloatingfeature \
+    libril_sem \
+    libsec-ril \
+    libsemnativecarrierfeature \
+    libvk_cass_interface \
+    libvkmanager_vendor \
+    libswdap \
+    vendor.samsung.hardware.radio-V1-ndk \
+    vendor.samsung.hardware.radio.bridge-V1-ndk \
+    vendor.samsung.hardware.radio.channel-V1-ndk \
+    vendor.samsung.hardware.radio.data-V1-ndk \
+    vendor.samsung.hardware.radio.messaging-V1-ndk \
+    vendor.samsung.hardware.radio.sim-V1-ndk \
+    android.hardware.gatekeeper-service \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_34.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_34.xml
+    vendor.samsung.hardware.sehradio_manifest_2_34.xml \
+    cass \
+    android.hardware.gatekeeper-service \
+    rild
