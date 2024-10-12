@@ -6,4 +6,18 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),a55x)
 
+$(call add-radio-file-sha1-checked,radio/fld.bin_SM-A556E,c2be63e1fa42a77302b3e7009ed84d926ba7eb17)
+$(call add-radio-file-sha1-checked,radio/harx.bin_SM-A556E,7384d130d19fdeea9fc35f887240e170f4566e72)
+$(call add-radio-file-sha1-checked,radio/keystorage.bin_SM-A556E,0827e22ec41fd578705679d71bceb1a2d8ca81f3)
+$(call add-radio-file-sha1-checked,radio/ldfw.img_SM-A556E,b5aafe1c40904e4943960073573b84472aea3399)
+$(call add-radio-file-sha1-checked,radio/models,0f7c19fb391b6b0181f8d49f0cd6a65340cd10ec)
+$(call add-radio-file-sha1-checked,radio/modem.bin_SM-A556E,6fc4d424ca9720b71dda8895af037f9e28b08bb3)
+$(call add-radio-file-sha1-checked,radio/modem_debug.bin_SM-A556E,6d1e8a83dddd97b0511f318944e034b6ecfd51cb)
+$(call add-radio-file-sha1-checked,radio/sboot.bin_SM-A556E,a7f1673e880af95a9ac01e8973e2c660268410f1)
+$(call add-radio-file-sha1-checked,radio/tzar.img_SM-A556E,324948664841c46aea6a75134fb83763bb5416ff)
+$(call add-radio-file-sha1-checked,radio/tzsw.img_SM-A556E,a87e327c8f3e912054644d8dc4c2bc639eb77bb6)
+$(call add-radio-file-sha1-checked,radio/uh.bin_SM-A556E,0080e02f3d5367c850c446ba49b03b317b4d01ea)
+$(call add-radio-file-sha1-checked,radio/up_param.bin_SM-A556E,55def65db11cb4263dcaff94ec28a6f6662bef28)
+$(call add-radio-file-sha1-checked,radio/version_SM-A556E,d4b1a64ffffe8939742bef9cb80c66018f452c00)
+
 endif
