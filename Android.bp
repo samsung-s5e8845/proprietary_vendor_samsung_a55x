@@ -17,10 +17,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/gatekeeper.s5e8845.so"],
+			shared_libs: ["libteecl", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	relative_install_path: "hw",
 	prefer: true,
 	soc_specific: true,
@@ -35,10 +35,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libSemDataProps.so"],
+			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -52,10 +52,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libSemTelephonyProps.so"],
+			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -69,10 +69,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libfloatingfeature.so"],
+			shared_libs: ["libexpat", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -86,10 +86,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libril_sem.so"],
+			shared_libs: ["libbase", "libbinder_ndk", "android.hardware.radio.config-V2-ndk", "android.hardware.radio.data-V2-ndk", "android.hardware.radio.messaging-V2-ndk", "android.hardware.radio.modem-V2-ndk", "android.hardware.radio.network-V2-ndk", "android.hardware.radio.sap-V1-ndk", "android.hardware.radio.sim-V2-ndk", "android.hardware.radio.voice-V2-ndk", "vendor.samsung.hardware.radio.bridge-V1-ndk", "vendor.samsung.hardware.radio.data-V1-ndk", "vendor.samsung.hardware.radio.messaging-V1-ndk", "vendor.samsung.hardware.radio.network-V1-ndk", "vendor.samsung.hardware.radio.sim-V1-ndk", "libcutils", "libhardware_legacy", "liblog", "librilutils", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -103,10 +103,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsec-ril.so"],
+			shared_libs: ["liblog", "libcutils", "libril_sem", "libnetutils", "libsqlite", "libhardware_legacy", "libcrypto", "librilutils", "libxml2", "libz", "libutils", "libjsoncpp", "libSemTelephonyProps", "libSemDataProps", "libvkmanager_vendor", "libengmode_client", "libbase", "libbinder_ndk", "vendor.samsung.hardware.radio.channel-V1-ndk", "libsecnativefeature", "libfloatingfeature", "libsemnativecarrierfeature", "libc++", "libprotobuf-cpp-full-21.7", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -120,10 +120,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsemnativecarrierfeature.so"],
+			shared_libs: ["libexpat", "libcutils", "libz", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -137,10 +137,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvk_cass_interface.so"],
+			shared_libs: ["libcutils", "liblog", "libvkmanager_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -154,10 +154,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libvkmanager_vendor.so"],
+			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -171,10 +171,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/soundfx/libswdap.so"],
+			shared_libs: ["libaudioutils", "libcutils", "liblog", "libutils", "libprofileparamstorage", "libspatializerparamstorage", "libsecaudiocoreutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	relative_install_path: "soundfx",
 	prefer: true,
 	soc_specific: true,
@@ -189,10 +189,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -206,10 +206,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "vendor.samsung.hardware.radio-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -223,10 +223,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "vendor.samsung.hardware.radio-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -240,10 +240,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "vendor.samsung.hardware.radio-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -257,10 +257,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "vendor.samsung.hardware.radio-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -274,10 +274,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "vendor.samsung.hardware.radio-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -324,10 +324,10 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/cass"],
+			shared_libs: ["liblog", "libc", "libvk_cass_interface", "libsecril-client", "libengmode_client", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	strip: {
 		none: true,
 	},
@@ -341,10 +341,10 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.gatekeeper-service"],
+			shared_libs: ["android.hardware.gatekeeper-V1-ndk", "libbinder_ndk", "libbase", "libgatekeeper", "libhardware", "libhidlbase", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	strip: {
 		none: true,
 	},
@@ -359,10 +359,10 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/rild"],
+			shared_libs: ["libcutils", "liblog", "libril_sem", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	strip: {
 		none: true,
 	},
